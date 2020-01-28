@@ -1,0 +1,24 @@
+.form-row {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.reset-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+#login-group{
+	display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+input.btn.btn-primary {
+    margin-top: 25px;
+}
+p#login-group {
+    margin-top: 7px;
+}
