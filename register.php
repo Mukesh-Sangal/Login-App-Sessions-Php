@@ -1,11 +1,12 @@
 <?php
-require_once("login.php");
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+ session_start();
+// //require_once("login.php");
+ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 
-	//session_destroy();
-	header("location: welcome.php");
-	exit;
-}
+// 	//session_destroy();
+ 	header("location: welcome.php");
+ 	exit;
+ }
 
 	// include cofig File to connect with db
 	require_once("config.php");
@@ -61,7 +62,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 				//create a hash password
 				$param_password = password_hash($password, PASSWORD_DEFAULT);
 				if(mysqli_stmt_execute($stmt)){
-					header("login.php");
+					header("location:login.php");
 				}else{
 					echo "Something Went Wrong. Please Try Again later ";
 				}		
