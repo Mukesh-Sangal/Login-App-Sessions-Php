@@ -5,6 +5,7 @@
 
 // 	//session_destroy();
  	header("location: welcome.php");
+ 	//session_destroy();
  	exit;
  }
 

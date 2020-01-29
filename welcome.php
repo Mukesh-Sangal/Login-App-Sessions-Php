@@ -23,7 +23,6 @@ session_start();
 		<h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> Welcome to our Site</h1>
 	</div>
 	 <p>
-        <a href="reset.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
